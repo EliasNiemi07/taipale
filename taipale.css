@@ -10,6 +10,7 @@ header{
     display: grid;
     place-items:center;
     border: 3px solid black;
+    border-radius: 30px;
 }
 .headerp {
     font-size: 25px;
@@ -63,14 +64,16 @@ nav ul {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background-color:#c6fec8;
     border: 3px solid black;
+    border-radius: 30px;
 }
 a:hover {
-    color:#000000
+    color:#5ed35e
 }
 a {
     color: black;
     background-color: #c6fec8;
     border: 3px solid black;
+    border-radius: 10px;
 }
 @media screen and (min-width: 450px) {
 .kuvaetu {
