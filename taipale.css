@@ -1,0 +1,172 @@
+*{
+    margin:5px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    background-color: #8cff90;
+}
+header{
+    background-color:#bfffc1;
+    height:80px;
+    display: grid;
+    place-items:center;
+}
+.headerp {
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: #c6fec8;
+}
+footer {
+    background-color:#c6fec8;
+    height:61px;
+    width:100%;
+    display: grid;
+    place-items:center;
+}
+footer ul {
+    background-color: #c6fec8;
+}
+.footerli {
+    list-style: none;
+    margin: 5px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #c6fec8;
+}
+.footerli2 {
+    list-style: none;
+    margin: 0px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #c6fec8;
+}
+nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    height: 50px;
+}
+nav li {
+    margin-top: 10px;
+    list-style:none;
+    font-size:25px ;
+    background-color:#c6fec8;
+}
+nav ul {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color:#c6fec8;
+}
+a:hover {
+    color:#000000
+}
+a {
+    color: black;
+    background-color: #c6fec8;
+}
+@media screen and (min-width: 450px) {
+.kuvaetu {
+    height: 300px;
+    width: 100%;
+    
+}
+footer {
+    width:100%;
+}
+}
+@media screen and (max-width: 450px) {
+.kuvaetu {
+    width: 90%;
+}
+nav ul li {
+    font-size: 12px;
+}
+}
+
+@media screen and (max-width: 600px) {
+nav {
+    width: 100%;
+}
+nav li {
+    font-size: 15px;
+}
+}
+.kuvaetu {
+height: 400px;
+} 
+.etup {
+    font-size: 25px;
+    margin-bottom: 30px;
+} 
+@media screen and (min-width: 901px) {
+    .kuvadiv {
+        height: 300px;
+        display: flex;
+        margin-bottom: 320px;
+    }
+    .kuvaetu {
+        width: 40%;
+    }
+    .etup {
+        display:flex;
+        margin-bottom: 0px;
+        width: 70%;
+        
+    }
+    
+}
+.otsik {
+    font-weight: bold;
+    font-size: 20px;
+}
+.majp p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.toimp p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}    
+.kuvatoi {
+    display: flex;
+}
+@media screen and (max-width: 1101px) {
+    .kuvatoi {
+        width:0%
+    }
+}
+.tilap p{
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+@media screen and (max-width: 601px) {
+    .tilaimg {
+        width: 100%;
+    }
+}
+
+.tilaimg {
+    height: 400px;
+}
+.yhtep p{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.ruokp p {
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+.face {
+    width:200px;
+    height:168px;
+}
+@media screen and (max-width: 629px) {
+    .ruokimg {
+        width: 0%;
+    }
+}
