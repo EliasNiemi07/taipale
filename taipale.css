@@ -70,6 +70,7 @@ a:hover {
 a {
     color: black;
     background-color: #c6fec8;
+    border: 3px solid black;
 }
 @media screen and (min-width: 450px) {
 .kuvaetu {
