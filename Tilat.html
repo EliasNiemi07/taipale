@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .hidden {
+            display: none;
+        }
+        div {
+            margin-bottom: 100px;
+        }
+        .hidbtn:hover {
+        cursor: pointer;
+       }
+       .kysy {
+        font-size: 15px;
+       }
+       .feedback {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-size: 25px;
+    }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tilat</title>
@@ -37,15 +56,53 @@
     
     <p>Meillä on myös pienempiä tapaamisia varten luokkahuone, johon mahtuu maksimissaan 28 henkilöä. Se soveltuu pienemmille kokouksille tai esimerkiksi koulutuksiin. On myös mahdollista tilata pitopalvelustamme kahvitarjoilu lisähintaan. Tilan hinta on 25 € tunnilta.</p>
     
-    <p><a href="#">Tiedustelut tiloista tästä.</p></a>
-    
-    <img class="tilaimg" src="image3.png">            
+    <p class="hidbtn" id="hidtxtbtn6"><a>Tiedostelut tiloista tästä.</p></a>
+    <div class="hidden" id="hiddentext6">
+        <h1>Varaa tila.</h1>
+        <hr>
+        <form id="form6">
+            <label for="Etusuku6" class="kysy"></label>Etunimi ja sukunimi:</label>
+            <input type="text" id="Etusuku6">
+            <br><br>
+            <label for="sahko6" class="kysy"></label>Sähköpostiosoite:</label>
+            <input type="text"id="sahko6">
+            <br><br>
+            <label for="numero6" class="kysy"></label>Puhelinnumero:</label>
+            <input type="text" id="numero6">
+            <br><br>
+            <label for="tila6">Valitse tila:</label>
+            <select id="tila6">
+                <option value="none">-</option>
+                <option value="Juhla">Juhlatila</option>
+                <option value="Kokous">Kokoushuone</option>
+                <option value="Luokka">Luokkahuone</option>
+            </select>
+            <br><br>
+            <label for="saapu6" class="kysy"></label>Päivämäärä:</label>
+            <input type="date" id="saapu6" required>
+            <br><br>
+            <label for="alkamis">Alkamiskellonaika</label>
+            <input type="time" id="alkamis" required>
+            <br><br>
+            <label for="loppumis">Loppumiskellonaika</label>
+            <input type="time" id="loppumis" required>
+            <br><br>
+            <button type="submit" id="submit6">Lähetä</button>
+            <button type="reset">Tyhjennä</button>
+            <p id="feedback6" class="feedback"></p>
+            
+        </form>
+        <hr>
+    </div>
+    <img class="tilaimg" src="image3.png">
+              
 </main>    
 <footer>
      <ul>
         <li class="footerli">Copyright by Elias Niemi</li>
         <li class="footerli2"><a href="Yhteystiedot.html">Yhteystiedot</li></a>
     </ul>
-</footer>    
+</footer>
+<script src="tilat.js"></script>
 </body>
 </html>

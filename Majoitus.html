@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .hidden {
+            display: none;
+        }
+        div {
+            margin-bottom: 100px;
+        }
+        .hidbtn:hover {
+        cursor: pointer;
+       }
+       .kysy {
+        font-size: 15px;
+       }
+       .feedback {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-size: 25px;
+    }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Majoitus</title>
@@ -32,29 +51,166 @@
     
     <p>Pienen mökin vuorokausihinta on 70 €. </p>
     
-    <p><a href="#">Vuokraa pieni mökki tästä.</p></a>
-    
+    <p class="hidbtn" id="hidtxtbtn"><a>Vuokraa pieni mökki tästä.</p></a>
+    <div class="hidden" id="hiddentext">
+        <h1>Varaa pieni mökki 70 € per yö</h1>
+        <hr>
+        <form id="form">
+            <label for="Etusuku" class="kysy"></label>Etunimi ja sukunimi:</label>
+            <input type="text" id="Etusuku">
+            <br><br>
+            <label for="sähkö" class="kysy"></label>Sähköpostiosoite:</label>
+            <input type="text"id="sähkö">
+            <br><br>
+            <label for="numero" class="kysy"></label>Puhelinnumero:</label>
+            <input type="text" id="numero">
+            <br><br>
+            <label for="saapu" class="kysy"></label>Saapumispäivämäärä:</label>
+            <input type="date" id="saapu" required>
+            <br><br>
+            <label for="lähtö" class="kysy"></label>Lähtöpäivämäärä:</label>
+            <input type="date" id="lähtö" required>
+            <br><br>
+            <button type="submit" id="submit">Lähetä</button>
+            <button type="reset">Tyhjennä</button>
+            <p id="feedback" class="feedback"></p>
+            
+        </form>
+        <hr>
+    </div>
     <p>Ison mökin vuorokausihinta on 100 €. </p>
     
-    <p><a href="#">Vuokraa suuri mökki tästä.</p></a>
+    <p class="hidbtn" id="hidtxtbtn2"><a>Vuokraa suuri mökki tästä.</p></a>
+    <div class="hidden" id="hiddentext2">
+        <h1>Varaa pieni mökki 100 € per yö</h1>
+        <hr>
+        <form id="form2">
+            <label for="Etusuku" class="kysy"></label>Etunimi ja sukunimi:</label>
+            <input type="text" id="Etusuku2">
+            <br><br>
+            <label for="sähkö" class="kysy"></label>Sähköpostiosoite:</label>
+            <input type="text"id="sähkö2">
+            <br><br>
+            <label for="numero" class="kysy"></label>Puhelinnumero:</label>
+            <input type="text" id="numero2">
+            <br><br>
+            <label for="saapu" class="kysy"></label>Saapumispäivämäärä:</label>
+            <input type="date" id="saapu2" required>
+            <br><br>
+            <label for="lähtö" class="kysy"></label>Lähtöpäivämäärä:</label>
+            <input type="date" id="lähtö2" required>
+            <br><br>
+            <button type="submit" id="submit2">Lähetä</button>
+            <button type="reset">Tyhjennä</button>
+            <p id="feedback2" class="feedback"></p>
+            
+        </form>
+        <hr>
+    </div>
     
     <p class="otsik">Teltat</p>
     
     <p>Meillä on oma telttailualue, jolta voi vuokrata telttamajoituksen nukkumisvarusteineen. Telttojen koot vaihtelevat kolmen hengen teltasta kuuden hengen telttaan. Yhden teltan vuorokausihinta on 5 € plus 10 € jokaiselta yöpyjältä. Telttamajoitusta on tarjolla kesäkuun alusta syyskuun loppuun.</p>
     
-    <p><a href="#">Varaa telttamajoitus tästä.</p></a>
-
+    <p class="hidbtn" id="hidtxtbtn3"><a>Varaa telttamajoitus tästä.</p></a>
+    <div class="hidden" id="hiddentext3">
+        <h1>Varaa telttamajoitus 5 € per yö plus 10 € per nukkuja</h1>
+        <hr>
+        <form id="form3">
+            <label for="Etusuku" class="kysy"></label>Etunimi ja sukunimi:</label>
+            <input type="text" id="Etusuku3">
+            <br><br>
+            <label for="sähkö" class="kysy"></label>Sähköpostiosoite:</label>
+            <input type="text"id="sähkö3">
+            <br><br>
+            <label for="numero" class="kysy"></label>Puhelinnumero:</label>
+            <input type="text" id="numero3">
+            <br><br>
+            <label for="saapu" class="kysy"></label>Saapumispäivämäärä:</label>
+            <input type="date" id="saapu3" required>
+            <br><br>
+            <label for="lähtö" class="kysy">Lähtöpäivämäärä:</label>
+            <input type="date" id="lähtö3" required>
+            <br><br>
+            <label for="määrä" class="kysy">Yöpyjien lukumäärä:</label>
+            <input type="number" id="määrä3" min="1" max="20" required>
+            <button type="submit" id="submit3">Lähetä</button>
+            <button type="reset">Tyhjennä</button>
+            <p id="feedback3" class="feedback"></p>
+            
+        </form>
+        <hr>
+    </div>
     <p class="otsik" >Asuntoautopaikat</p>
     
     <p>Asuntoautoille- ja vaunuille on joukko omia paikkoja, joilla on jaettu huoltorakennus. Paikkoja löytyy kahdellekymmenelle kulkuneuvolle. Paikan vuorokausivuokra on 20 € läpi vuoden.
 
-    <p><a href="#">Varaa asuntoautopaikka tästä.</p></a>
-    
+    <p class="hidbtn" id="hidtxtbtn4"><a>Varaa asuntoautopaikka tästä.</p></a>
+    <div class="hidden" id="hiddentext4">
+        <h1>Varaa asuntoautopaikka 20 € per yö.</h1>
+        <hr>
+        <form id="form4">
+            <label for="Etusuku" class="kysy"></label>Etunimi ja sukunimi:</label>
+            <input type="text" id="Etusuku4">
+            <br><br>
+            <label for="sähkö" class="kysy"></label>Sähköpostiosoite:</label>
+            <input type="text"id="sähkö4">
+            <br><br>
+            <label for="numero" class="kysy"></label>Puhelinnumero:</label>
+            <input type="text" id="numero4">
+            <br><br>
+            <label for="saapu" class="kysy"></label>Saapumispäivämäärä:</label>
+            <input type="date" id="saapu4" required>
+            <br><br>
+            <label for="lähtö" class="kysy">Lähtöpäivämäärä:</label>
+            <input type="date" id="lähtö4" required>
+            <br><br>
+            
+            <button type="submit" id="submit4">Lähetä</button>
+            <button type="reset">Tyhjennä</button>
+            <p id="feedback4" class="feedback"></p>
+            
+        </form>
+        <hr>
+    </div>
     <p class="otsik">Hotellimajoitus</p>
     
     <p>Päärakennuksessamme on hotellihuoneita 30 kappaletta. Näistä 20 on kahden hengen huoneita ja 10 neljän hengen huoneita. Jokaisessa huoneessa on oma kylpyhuone ja pieni keittiö. Huoneisiin on mahdollista levittää sohvasta yksi lisävuode. Aamiainen kuuluu huoneiden hintaan. Kahden hengen huoneen vuorokausihinta on 90 € ja neljän hengen huoneen vuorokausihinta on 130 €.</p>
     
-    <p><a href="#">Varaa huone tästä.</p></a>
+    <p class="hidbtn" id="hidtxtbtn5"><a>Varaa huone tästä.</p></a>
+    <div class="hidden" id="hiddentext5">
+        <h1>Varaa hotelliyö.</h1>
+        <hr>
+        <form id="form5">
+            <label for="Etusuku" class="kysy"></label>Etunimi ja sukunimi:</label>
+            <input type="text" id="Etusuku5">
+            <br><br>
+            <label for="sähkö" class="kysy"></label>Sähköpostiosoite:</label>
+            <input type="text"id="sähkö5">
+            <br><br>
+            <label for="numero" class="kysy"></label>Puhelinnumero:</label>
+            <input type="text" id="numero5">
+            <br><br>
+            <label for="saapu" class="kysy"></label>Saapumispäivämäärä:</label>
+            <input type="date" id="saapu5" required>
+            <br><br>
+            <label for="lähtö" class="kysy">Lähtöpäivämäärä:</label>
+            <input type="date" id="lähtö5" required>
+            <br><br>
+            <label for="huone5" class="kysy">Huone:
+            </label><br>
+            <label for="huone" class="kysy">Kahden hengen huone:</label>
+            <input type="radio"id="huonekaksi5" name="huone" value="90">
+            <label for="huone">Neljän hengen huone:</label>
+            <input type="radio" id="huoneneljä5" name="huone" value="130">
+            <br><br>
+            <button type="submit" id="submit5">Lähetä</button>
+            <button type="reset">Tyhjennä</button>
+            <p id="feedback5" class="feedback"></p>
+            
+        </form>
+        <hr>
+    </div>
 </main>    
 <footer>
      <ul>
@@ -62,5 +218,6 @@
          <li class="footerli2"><a href="Yhteystiedot.html">Yhteystiedot</li></a>
     </ul>
 </footer>
+<script src="taipale.js"></script>
 </body>
 </html>

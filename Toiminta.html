@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .hidden {
+        display: none;
+    }
+      .hiddenp {
+       font-size: 17px;
+       text-decoration: underline;
+       font-weight: bold;
+      }
+     .hidbtn:hover {
+        cursor: pointer;
+     }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toiminta</title>
@@ -29,7 +42,21 @@
     
 <p>Leirintäkeskuksen pääsalissa on useina kesäiltoina erilaisia musiikki- tai tanssiesityksiä sekä ajoittain myös standup komiikkaa.</p>
     
-<p> <a href="#">Katso kesän 2026 esiintyjät tästä.</p></a>
+<p id="hidtxtbtn" class="hidbtn"><a>Katso kesän 2026 esiintyjät tästä.</a></p>
+    <div class="hidden" id="hiddentext">
+    <p class="hiddenp">Aurinkosilta – perjantai 12.6.2026 klo 20.00</p>
+    <p class="hiddenp">Kalliorannan Kaiku – lauantai 13.6.2026 klo 21.00</p>
+    <p class="hiddenp">Revontuliyö – perjantai 19.6.2026 klo 22.00</p>
+    <p class="hiddenp">Särö & Sammal – lauantai 20.6.2026 klo 20.30</p>
+    <p class="hiddenp">Hiljainen Hiekka – perjantai 26.6.2026 klo 21.00</p>
+    <p class="hiddenp">Vanhat Varjot – lauantai 27.6.2026 klo 22.00</p>
+    <p class="hiddenp">Keskiyön Kaarna – perjantai 3.7.2026 klo 20.30</p>
+    <p class="hiddenp">Järvenselkä – lauantai 4.7.2026 klo 21.30</p>
+    <p class="hiddenp">Pohjoistuuli & Valo – perjantai 10.7.2026 klo 22.00</p>
+    <p class="hiddenp">Liekkiheinä – lauantai 11.7.2026 klo 20.00</p>
+    <br>
+    <p class="hiddenp">Liput voit ostaa vastaanotosta</p>
+    </div>
 <p class="otsik">Venevuokraus</p>
     
 <p>Soutuveneitä voi vuokrata päärakennukselta kesäkaudella hintaan 5 € tunti. Maksimiaika vuokraukselle on kuusi tuntia.</p>
@@ -50,6 +77,7 @@
         <li class="footerli">Copyright by Elias Niemi</li>
         <li class="footerli2"><a href="Yhteystiedot.html">Yhteystiedot</li></a>
     </ul>
-</footer>    
+</footer>  
+<script src="taipale.js"></script>  
 </body>
 </html>
